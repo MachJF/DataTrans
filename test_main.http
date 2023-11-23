@@ -1,0 +1,15 @@
+GET http://127.0.0.1:8080/dataTransInit?kafka_servers=[127.0.0.1:9092]&agent_topic=topic01&identifier_topic=topic02&
+    group_id=g01
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8080/dataTransCapture?kafka_servers=[127.0.0.1:9092]&agent_topic=topic01&identifier_topic=topic02&
+    group_id=g01
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8080/dataTransControl?kafka_server=[127.0.0.1:9092]&agent_topic=topic01&identifier_topic=topic02&
+    group_id=g01
+Accept: application/json
